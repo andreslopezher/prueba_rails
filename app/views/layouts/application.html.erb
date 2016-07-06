@@ -7,7 +7,7 @@
   <%= csrf_meta_tags %>
   <%= render 'layouts/bootstrap' %>
 </head>
-<body>
+<body class='<%= params[:controller]%>'>
 	<%= render 'layouts/navbar' %>
 	<div class="container">
 		<%= yield %>
